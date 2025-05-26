@@ -1,0 +1,169 @@
+CSS3 Exercises - Code Answers
+1. Why CSS? Inline vs. Internal vs. External
+<h1 style="color: red;">Welcome to the Event Portal</h1>
+
+<head>
+  <style>
+    body {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+
+<link rel="stylesheet" href="styles.css">
+
+/* Header styles */
+2. CSS Syntax and Comments
+/* Style for main CTA button */
+.cta-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+3. Selectors Playground
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+#mainHeader {
+  background-color: #333;
+  color: white;
+}
+
+.eventCard {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+h3, p {
+  font-family: Arial, sans-serif;
+}
+4. Color & Background Styling
+body {
+  background: url("background.jpg") no-repeat center center;
+  background-color: #cccccc;
+}
+
+h2 {
+  background: linear-gradient(to right, #ff0000, #0000ff);
+  color: white;
+}
+
+p {
+  color: rgba(0, 0, 0, 0.8);
+}
+5. Typography: Fonts and Text
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.description {
+  text-align: justify;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+6. Link and List Styling
+a:link {
+  color: #007BFF;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+a:active {
+  color: #003d80;
+}
+
+a:visited {
+  color: #800080;
+}
+
+ul.nav {
+  list-style-type: none;
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+}
+
+ul.nav li {
+  margin: 10px 0;
+}
+7. Table Styling
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  background-color: #f9f9f9;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+8. Box Model & Layout Control
+.eventCard {
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+input:focus {
+  outline: 2px solid blue;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.none {
+  display: none;
+}
+9. Multiple Columns in Text
+.news-article {
+  column-count: 2;
+  column-gap: 30px;
+  column-rule: 1px solid gray;
+}
+10. Responsive Web Design with Media Queries
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: block;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  body {
+    font-size: 14px;
+  }
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+11. Debug and Test with Dev Tools and VS Code
+// Use Chrome DevTools (F12 or right-click > Inspect)
+// Simulate devices via the device toolbar
+// Check loaded CSS in the Network tab
+// Modify CSS live to test layout changes
