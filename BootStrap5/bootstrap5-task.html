@@ -1,0 +1,204 @@
+Bootstrap 5 Full Coding Answers
+1. Setting Up Bootstrap 5
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap CDN</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <h1>Hello, Bootstrap!</h1>
+</body>
+</html>
+<!-- Using downloaded Bootstrap files -->
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+2. Bootstrap Structure and Files
+/* CSS: Styling */
+/* JS: Interactive components */
+/* Icons: Vector-based icons */
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+3. Fundamentals of Responsive Grid Layout
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-6 col-lg-4">Column 1</div>
+    <div class="col-12 col-md-6 col-lg-4">Column 2</div>
+    <div class="col-12 col-md-6 col-lg-4">Column 3</div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">One</div>
+    <div class="col-sm">Two</div>
+  </div>
+</div>
+
+4. Column Layouts and Grid Classes
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 bg-light">Sidebar</div>
+    <div class="col-md-9">Content</div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-3">1</div>
+  <div class="col-sm-3">2</div>
+  <div class="col-sm-3">3</div>
+  <div class="col-sm-3">4</div>
+</div>
+
+5. Alignment and Reordering in Grid
+<div class="row justify-content-center align-items-center" style="height: 200px;">
+  <div class="col-6">Centered content</div>
+</div>
+<div class="row">
+  <div class="col-md-4 order-md-2">Second on desktop</div>
+  <div class="col-md-8 order-md-1">First on desktop</div>
+</div>
+
+6. Responsive Flexbox Utilities
+<div class="d-flex flex-column flex-md-row">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+</div>
+<div class="card d-flex justify-content-between align-items-center p-3">
+  <h5>Title</h5>
+  <button class="btn btn-primary">Action</button>
+</div>
+
+7. Typography
+<h1 class="display-1">Display 1</h1>
+<p class="lead text-muted fw-bold">Lead text</p>
+<p class="text-uppercase">uppercase</p>
+<p class="text-lowercase">LOWERCASE</p>
+<p class="text-capitalize">capitalize each word</p>
+
+8. Forms
+<form>
+  <input class="form-control" type="text" placeholder="Name">
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox">
+    <label class="form-check-label">Agree</label>
+  </div>
+  <div class="input-group">
+    <span class="input-group-text">@</span>
+    <input type="text" class="form-control" placeholder="Username">
+  </div>
+</form>
+<form>
+  <div class="form-floating">
+    <input type="email" class="form-control" id="email" placeholder="Email">
+    <label for="email">Email</label>
+  </div>
+  <div class="form-floating">
+    <input type="password" class="form-control" id="password" placeholder="Password">
+    <label for="password">Password</label>
+  </div>
+</form>
+
+9. Buttons
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-outline-secondary">Outline</button>
+<div class="btn-group">
+  <input type="checkbox" class="btn-check" id="toggle1">
+  <label class="btn btn-outline-primary" for="toggle1">Toggle</label>
+</div>
+
+10. Navbars and Navigation
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Logo</a>
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+    </ul>
+    <form class="d-flex ms-auto">
+      <input class="form-control" type="search" placeholder="Search">
+    </form>
+  </div>
+</nav>
+<ul class="nav nav-tabs">
+  <li class="nav-item"><a class="nav-link active" href="#">Tab 1</a></li>
+</ul>
+
+11. Cards and Media Objects
+<div class="card" style="width: 18rem;">
+  <img src="profile.jpg" class="card-img-top" alt="Profile">
+  <div class="card-body">
+    <h5 class="card-title">Profile Name</h5>
+    <p class="card-text">Description</p>
+  </div>
+</div>
+<div class="media">
+  <img src="img.jpg" class="mr-3" alt="..." width="64">
+  <div class="media-body">
+    <h5>Title</h5>
+    <p>Content here</p>
+  </div>
+</div>
+
+12. Spacing Utilities
+<div class="m-3 p-2 bg-light">Margin and Padding</div>
+<section class="py-5 px-3 bg-secondary text-white">Pricing content</section>
+
+13. Colors and Backgrounds
+<div class="bg-primary text-white p-3">Primary Section</div>
+<div class="bg-warning text-dark p-3">Warning Section</div>
+<div class="bg-dark bg-gradient text-white p-4">Gradient Dark Background</div>
+
+14. Display and Visibility
+<div class="d-none d-md-block">Only visible on md and up</div>
+<div class="d-none d-md-block col-md-3">Sidebar for tablets and above</div>
+
+15. Borders, Shadows, and Rounded Corners
+<img src="pic.jpg" class="border border-primary border-3 rounded-circle">
+<div class="card shadow-lg rounded-pill p-3">Card content</div>
+
+16. Positioning Utilities
+<footer class="position-fixed bottom-0 w-100 bg-dark text-white text-center">
+  Footer content
+</footer>
+<div class="position-relative">
+  <img src="image.jpg" alt="">
+  <span class="badge bg-danger position-absolute top-0 start-100 translate-middle">New</span>
+</div>
+
+17. Icons with Bootstrap Icons
+<footer>
+  <i class="bi bi-facebook"></i>
+  <i class="bi bi-twitter"></i>
+</footer>
+<button class="btn btn-primary"><i class="bi bi-check"></i></button>
+
+18. Bootstrap 5 JavaScript Plugins
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+<div class="modal fade" id="exampleModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">Modal content</div>
+  </div>
+</div>
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+        Accordion Item
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show">
+      <div class="accordion-body">Content</div>
+    </div>
+  </div>
+</div>
+
+19. Customization with Sass
+// In terminal
+npm install bootstrap sass
+// In _variables.scss
+$primary: #6610f2;
+$border-radius: 1rem;
+// Then recompile using sass command
